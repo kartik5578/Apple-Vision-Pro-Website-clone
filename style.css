@@ -1,0 +1,943 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+
+}
+
+#main {
+    position: relative;
+    overflow: hidden;
+}
+
+#page {
+    position: relative;
+    height: 100vh;
+    top: 0%;
+    background-color: black;
+}
+
+#page>nav {
+    height: 7vh;
+    width: 70vw;
+    align-items: center;
+    display: flex;
+    padding: 0px 20px;
+    justify-content: space-between;
+    position: absolute;
+    background-color: black;
+    backdrop-filter: blur(2px);
+    left: 50%;
+    color: white;
+    transform: translateX(-50%);
+}
+
+#page>nav>button {
+    padding: 5px 10px;
+    filter: blur(0px);
+    border-radius: 50px;
+    border: none;
+    background-color: white;
+}
+
+#page>video {
+    height: 100%;
+    width: 50%;
+    object-fit: cover;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#page-bottom {
+    height: 20%;
+    width: 25%;
+    position: absolute;
+    left: 50%;
+    bottom: 5%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#page-bottom>img {
+    width: 90%;
+}
+
+#page-bottom>h3 {
+    color: rgb(231, 231, 231);
+    padding-bottom: 5px;
+}
+
+#page1 {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: mediumseagreen;
+}
+
+#page1>video {
+    height: 100%;
+    width: 100%;
+    filter: brightness(50%);
+    object-fit: cover;
+}
+
+#page1>h1 {
+    font-size: 5vw;
+    font-weight: 400;
+    color: white;
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    z-index: 20;
+    transform: translateX(-50%);
+    white-space: nowrap;
+}
+
+#page2 {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: mediumseagreen;
+}
+
+#page2>video {
+    height: 100%;
+    width: 100%;
+    filter: brightness(50%);
+    object-fit: cover;
+}
+
+#page2>h1 {
+    font-size: 5vw;
+    text-align: center;
+    font-weight: 400;
+    color: white;
+    position: absolute;
+    z-index: 59;
+    bottom: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+}
+
+#page3 {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: white;
+}
+
+#page3>img {
+    position: absolute;
+    left: 50%;
+    top: 35%;
+    width: 60%;
+    transform: translateX(-50%);
+}
+
+#box>img {
+    width: 60%;
+    padding-bottom: 15px;
+}
+
+#box {
+
+    position: absolute;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    line-height: 40px;
+    align-items: center;
+    left: 50%;
+    top: 5%;
+    transform: translateX(-50%);
+}
+
+
+#box>h2 {
+    font-weight: 600;
+    color: orange;
+}
+
+#box>h3 {
+    columns: grey;
+    font-weight: 500;
+}
+
+#page3>button {
+    position: absolute;
+    left: 50%;
+    bottom: 5%;
+    transform: translateX(-50%);
+    width: 20%;
+    font-weight: 600;
+    background-color: white;
+    border-radius: 50px;
+    padding: 10px 10px;
+}
+
+#page3>button:hover {
+    background-color: black;
+    color: white;
+}
+
+#page4 {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    color: white;
+}
+
+#page4>video {
+    height: 100%;
+    width: 100%;
+    filter: brightness(50%);
+    object-fit: cover;
+}
+
+#page4-center {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    text-align: center;
+    font-size: 2vw;
+    z-index: 34;
+    transform: translateX(-50%);
+}
+
+#page4-center>h4 {
+    font-weight: 700;
+    font-size: large;
+}
+
+#page5 {
+    width: 100vw;
+    height: 60vh;
+    position: relative;
+    background-color: white;
+    display: flex;
+
+}
+
+.left5 {
+    height: 100%;
+    width: 50%;
+    position: relative;
+
+
+}
+
+.left5>h1 {
+    font-size: 1.8vw;
+    position: absolute;
+    top: 15%;
+    left: 70%;
+    transform: translateX(-50%);
+
+
+}
+
+.right5 {
+    height: 100%;
+    width: 60%;
+    position: relative;
+
+}
+
+.right5>h3 {
+    font-size: 1.3vw;
+    position: absolute;
+    top: 15%;
+    left: 40%;
+    color: gray;
+    transform: translateX(-50%);
+}
+
+.right5>button {
+    width: 40%;
+    background-color: #FF5B01;
+    position: absolute;
+    bottom: 10%;
+    left: 27%;
+    font-weight: bolder;
+    font-size: 1.3vw;
+    padding: 10px 20px;
+    transform: translateX(-50%);
+    color: white;
+    border: none;
+    border-radius: 50px;
+}
+
+#page6 {
+    height: 70vh;
+    width: 100vw;
+    background-color: #F4F5F6;
+    text-align: center;
+    padding: 10% 25%;
+}
+
+#page6>h1 {
+    font-size: 5vw;
+    margin-bottom: 5%;
+    color: #1D1D1F;
+}
+
+#page6>p {
+    font-size: 1.5vw;
+    text-align: justify;
+    color: #87878B;
+}
+
+#page7 {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: #f5f5f7;
+}
+
+#page7>canvas {
+    position: absolute;
+    max-width: 100vw;
+    max-height: 100vh;
+    z-index: 99;
+}
+
+#page8 {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: #f5f5f7;
+}
+
+#page8>h1 {
+    width: 20%;
+    position: absolute;
+    left: 5%;
+    font-size: 1.5vw;
+    text-align: center;
+    font-weight: 500;
+    color: #87878B;
+}
+
+#page8>h1>span {
+    color: #1D1D1F;
+}
+
+#page9 {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: #f5f5f7;
+}
+
+#page9>h1 {
+    width: 20%;
+    position: absolute;
+    right: 5%;
+    font-size: 1.5vw;
+    text-align: center;
+    font-weight: 500;
+    color: #87878B;
+}
+
+#page9>h1>span {
+    color: #1D1D1F;
+}
+
+
+#page10 {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: #f5f5f7;
+}
+
+#page10>h1 {
+    width: 20%;
+    position: absolute;
+    left: 5%;
+    font-size: 1.5vw;
+    text-align: center;
+    font-weight: 500;
+    color: #87878B;
+}
+
+#page10>h1>span {
+    color: #1D1D1F;
+}
+
+#page11 {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: #f5f5f7;
+}
+
+#page11>h1 {
+    width: 20%;
+    position: absolute;
+    left: 5%;
+    font-size: 1.5vw;
+    text-align: center;
+    font-weight: 500;
+    color: #87878B;
+}
+
+#page11>h1>span {
+    color: #1D1D1F;
+}
+
+#page12 {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: #f5f5f7;
+}
+
+#page12>h1 {
+    width: 20%;
+    position: absolute;
+    right: 5%;
+    font-size: 1.5vw;
+    text-align: center;
+    font-weight: 500;
+    color: #87878B;
+}
+
+#page12>h1>span {
+    color: #1D1D1F;
+}
+
+#page13 {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: #f5f5f7;
+}
+
+
+#page13>h1 {
+    width: 20%;
+    position: absolute;
+    left: 5%;
+    font-size: 1.5vw;
+    text-align: center;
+    font-weight: 500;
+    color: #87878B;
+}
+
+#page13>h1>span {
+    color: #1D1D1F;
+}
+
+#page14 {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.left14 {
+    height: 90%;
+    width: 45%;
+    background-image: url("https://www.apple.com/v/apple-vision-pro/a/images/overview/design/glass_top__k3b8lzqd1l2m_large.jpg");
+    background-size: cover;
+}
+
+.right14 {
+    height: 90%;
+    width: 45%;
+    background-image: url("https://www.apple.com/v/apple-vision-pro/a/images/overview/design/glass_side__gm4agomrwl2e_large.jpg");
+    background-size: cover;
+}
+
+#page15 {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    background-color: white;
+}
+
+#page15>video {
+    width: 95%;
+    height: 90%;
+    position: absolute;
+    object-fit: cover;
+    justify-content: center;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+#page16 {
+    width: 100vw;
+    height: 60vh;
+    background-color: white;
+    position: relative;
+}
+
+#page16>h3 {
+    width: 40%;
+    position: absolute;
+    font-size: 1.3vw;
+    font-weight: 700;
+    text-align: center;
+    left: 50%;
+    top: 30%;
+    transform: translateX(-50%);
+    color: #87878B;
+}
+
+#page16>h3>span {
+    color: #1D1D1F;
+}
+
+#page17 {
+    height: 140vh;
+    width: 100vw;
+    background-color: white;
+    position: relative;
+}
+
+.page17-img {
+    height: 100%;
+    width: 80%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background-image: url("https://www.apple.com/v/apple-vision-pro/a/images/overview/design/light_seal__fo87cv0zkcmm_large.jpg");
+    background-size: cover;
+}
+
+#page17>button {
+    width: 25%;
+    padding: 10px 8px;
+    background-color: #FF5B01;
+    border-radius: 50px;
+    position: absolute;
+    left: 50%;
+    bottom: 5%;
+    transform: translateX(-50%);
+    border: none;
+    font-size: 1.6vw;
+    font-weight: 500;
+    color: white;
+}
+
+
+
+
+#page18 {
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    position: relative;
+    top: 0%;
+}
+
+#page18-top {
+    position: absolute;
+    z-index: 99;
+    color: white;
+    left: 50%;
+
+    transform: translateX(-50%);
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#page18-top>h4 {
+    margin-top: 15%;
+}
+
+#page18-top>h1 {
+    font-size: 4vw;
+    margin-bottom: 5%;
+}
+
+#page18-top>p {
+    color: #87868A;
+}
+
+#page18-top>p>span {
+    color: white;
+}
+
+#page18>canvas {
+    position: relative;
+    max-width: 100vw;
+    max-height: 100vh;
+}
+
+
+#page19 {
+    height: 30vh;
+    width: 100vw;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
+    color: white;
+    background-color: black;
+    text-align: center;
+}
+
+#page19>h2 {
+    margin-bottom: 2%;
+    font-size: 1.6vw;
+}
+
+#page19>p {
+    color: #87868A;
+    font-weight: 600;
+    font-size: 1.1vw;
+}
+
+#page19>p>span {
+    color: white;
+}
+
+#page20 {
+    height: 120vh;
+    width: 100vw;
+    background-color: black;
+    position: relative;
+}
+
+#page20>video {
+    height: 60%;
+    width: 85%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    object-fit: cover;
+}
+
+.page20-bottom {
+    color: white;
+    position: absolute;
+    z-index: 99;
+    width: 29%;
+    left: 65%;
+    transform: translateX(-35%);
+    bottom: 17%;
+}
+
+.page20-bottom>h1 {
+    font-size: 2.2vw;
+    margin-bottom: 20px;
+}
+
+.page20-bottom>p {
+    font-size: 1.3vw;
+    font-weight: 600;
+    color: #87878B;
+}
+
+.page20-bottom>p>span {
+    color: white;
+}
+
+#page21 {
+    height: 120vh;
+    width: 100vw;
+    position: relative;
+    background-color: black;
+}
+
+#first {
+    width: 60%;
+    position: absolute;
+    z-index: 89;
+    left: 50%;
+    top: 10%;
+    transform: translateX(-50%);
+}
+
+#second {
+    /* z-index: 99; */
+    width: 60%;
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    transform: translateX(-50%);
+}
+
+#page21>#page21-bottom {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    left: 50%;
+    bottom: 6%;
+    z-index: 90;
+    width: 40%;
+    color: white;
+    transform: translateX(-50%);
+}
+
+#page21>#page21-bottom>h1 {
+    font-size: 1.8vw;
+    padding-bottom: 20px;
+}
+
+#page21>#page21-bottom>p {
+    color: #87868A;
+    font-weight: 600;
+}
+
+#page21>#page21-bottom>p>span {
+    color: white;
+}
+
+#page22 {
+    height: 120vh;
+    width: 100vw;
+    position: relative;
+    background-color: black;
+}
+
+#off {
+    width: 60%;
+    position: absolute;
+    z-index: 89;
+    left: 50%;
+    top: 10%;
+    transform: translateX(-50%);
+}
+
+#semion {
+    z-index: 50;
+    width: 60%;
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    transform: translateX(-50%);
+}
+
+#on {
+    /* z-index: 99; */
+    width: 60%;
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    transform: translateX(-50%);
+}
+
+#page22>#page22-bottom {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    left: 50%;
+    bottom: 6%;
+    z-index: 90;
+    width: 40%;
+    color: white;
+    transform: translateX(-50%);
+}
+
+#page22>#page22-bottom>h1 {
+    font-size: 1.8vw;
+    padding-bottom: 20px;
+}
+
+#page22>#page22-bottom>p {
+    color: #87868A;
+    font-weight: 600;
+}
+
+#page22>#page22-bottom>p>span {
+    color: white;
+}
+
+#page23 {
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    position: relative;
+}
+
+#page23>img {
+    position: absolute;
+    top: 10%;
+    object-fit: cover;
+    width: 100%;
+}
+
+#page24 {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#page24>h1 {
+    color: white;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+#page24>p {
+    color: #87868A;
+    font-size: 1.2vw;
+    width: 40%;
+    margin-bottom: 3%;
+}
+
+#page24>p>span {
+    color: white;
+}
+
+#page24>button {
+    background-color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.3vw;
+}
+
+#page25 {
+    height: 120vh;
+    width: 100vw;
+    position: relative;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#page25>img {
+    width: 70px;
+    margin-bottom: 30px;
+}
+
+#page25>h1 {
+    font-size: 4.5vw;
+    width: 60%;
+    text-align: center;
+    margin-bottom: 2%;
+}
+
+#page25>p {
+    width: 50%;
+    color: #87868A;
+    font-size: 1.5vw;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 3%;
+}
+
+#page25>p>span {
+    color: black;
+}
+
+#page25>button {
+    color: white;
+    background-color: #FF5B01;
+    padding: 10px 20px;
+    border-radius: 50px;
+    border: none;
+    font-size: 1.4vw;
+}
+
+section {
+    background-color: white;
+}
+
+#page26 {
+    height: 110vh;
+    width: 90vw;
+    background-color: #F4F5F6;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 50px;
+}
+
+#page26>img {
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    height: 85%;
+}
+
+.page26-info {
+    width: 35%;
+    position: absolute;
+    left: 10%;
+    top: 40%;
+}
+
+.page26-info>h1 {
+    font-size: 3.8vw;
+    font-weight: 500;
+    padding-bottom: 15px;
+}
+
+.page26-info>h3 {
+    font-size: 1.6vw;
+    color: #87868A;
+    font-weight: 500;
+
+}
+
+#page27 {
+    height: 100vh;
+    width: 90vw;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #F4F5F6;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#page27>h1 {
+    margin-top: 10px;
+    font-size: 3.2vw;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#page27>p {
+    text-align: center;
+    font-size: 1.5vw;
+    font-weight: 400;
+    width: 60%;
+}
+
+#page27>p>span {
+    color: #0167CC;
+}
