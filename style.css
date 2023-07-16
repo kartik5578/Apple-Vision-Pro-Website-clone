@@ -34,7 +34,7 @@ body {
     justify-content: space-between;
     position: absolute;
     background-color: black;
-    backdrop-filter: blur(2px);
+    /* backdrop-filter: blur(2px); */
     left: 50%;
     color: white;
     transform: translateX(-50%);
